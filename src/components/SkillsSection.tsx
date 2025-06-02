@@ -62,7 +62,7 @@ const SkillsSection = () => {
                 </div>
                 <div className="w-full bg-secondary rounded-full h-3 overflow-hidden">
                   <div
-                    className="h-full bg-gradient-to-r from-primary to-purple-600 rounded-full transition-all duration-1000 ease-out"
+                    className="h-full bg-gradient-to-r from-blue-500 to-blue-700 rounded-full transition-all duration-1000 ease-out"
                     style={{
                       width: isVisible ? `${skill.level}%` : '0%',
                       transitionDelay: `${index * 200}ms`
