@@ -10,19 +10,19 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: 'Email',
-      details: 'alex.johnson@email.com',
-      action: 'mailto:alex.johnson@email.com'
+      details: 'efaby10@gmail.com',
+      action: 'mailto:efaby10@gmail.com'
     },
     {
       icon: Phone,
       title: 'Phone',
-      details: '+1 (555) 123-4567',
-      action: 'tel:+15551234567'
+      details: '+(593) 984038314',
+      action: 'tel:+593984038314'
     },
     {
       icon: MapPin,
       title: 'Location',
-      details: 'San Francisco, CA',
+      details: 'Riobamba, ECU',
       action: '#'
     },
   ];

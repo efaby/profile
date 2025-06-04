@@ -6,17 +6,17 @@ const SkillsSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   const skills = [
-    { name: 'React/Next.js', level: 95 },
+    { name: 'Angular', level: 95 },
     { name: 'TypeScript', level: 90 },
-    { name: 'Node.js', level: 85 },
-    { name: 'Python', level: 80 },
-    { name: 'UI/UX Design', level: 88 },
+    { name: 'Node.js', level: 95 },
+    { name: 'PHP', level: 80 },
+    { name: 'Databases', level: 88 },
     { name: 'AWS/Cloud', level: 75 },
   ];
 
   const tools = [
-    'React', 'Next.js', 'TypeScript', 'Node.js', 'Python', 'PostgreSQL',
-    'MongoDB', 'AWS', 'Docker', 'Git', 'Figma', 'Tailwind CSS'
+    'Angular', 'Nest', 'Express', 'Node.js', 'PHP', 'PostgreSQL', 'Mysql', 
+    'MongoDB', 'AWS', 'Docker', 'GitHub', 'Bootstrap CSS'
   ];
 
   useEffect(() => {

@@ -6,6 +6,27 @@ const HeroSection = () => {
     document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const goToLinkedin = () => {
+    window.open('https://www.linkedin.com/in/fabian-villa-73175b28/', '_blank');
+  };
+  const goToGithub = () => {
+    window.open('https://github.com/efaby', '_blank');
+  };
+  const goToMail = () => {
+    window.location.href = 'mailto:efaby10@gmail.com';
+  };
+  const handleButtonClick = (action: () => void) => {
+    action();
+  };
+  const handleLinkedinClick = () => handleButtonClick(goToLinkedin);
+  const handleGithubClick = () => handleButtonClick(goToGithub);
+  const handleMailClick = () => handleButtonClick(goToMail);
+  
+  const handleDownloadCV = () => {
+    window.open('FabianVillaCV.pdf', '_blank');
+  };
+
+
   return (
     <section
       id="home"
@@ -27,7 +48,7 @@ const HeroSection = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             Hello, I'm{' '}
             <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-              Alex Johnson
+              Fabian Villa
             </span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-200">
@@ -40,13 +61,13 @@ const HeroSection = () => {
         </div>
 
         <div className="flex justify-center space-x-6 mb-12 animate-slide-in-left">
-          <Button variant="outline" size="icon" className="bg-white/10 border-white/20 hover:bg-white/20">
+          <Button variant="outline" size="icon" className="bg-white/10 border-white/20 hover:bg-white/20" onClick={handleGithubClick}>
             <Github className="h-5 w-5" />
           </Button>
-          <Button variant="outline" size="icon" className="bg-white/10 border-white/20 hover:bg-white/20">
+          <Button variant="outline" size="icon" className="bg-white/10 border-white/20 hover:bg-white/20" onClick={handleLinkedinClick}>
             <Linkedin className="h-5 w-5" />
           </Button>
-          <Button variant="outline" size="icon" className="bg-white/10 border-white/20 hover:bg-white/20">
+          <Button variant="outline" size="icon" className="bg-white/10 border-white/20 hover:bg-white/20" onClick={handleMailClick}>
             <Mail className="h-5 w-5" />
           </Button>
         </div>
@@ -59,6 +80,7 @@ const HeroSection = () => {
             View My Work
           </Button>
           <Button 
+          onClick={handleDownloadCV}
             variant="outline" 
             className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-3 text-lg"
           >
