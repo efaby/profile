@@ -27,7 +27,7 @@ const AboutSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4 text-gradient">About Me</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            I'm a passionate developer with 5+ years of experience creating digital solutions
+            I'm a passionate developer with 8+ years of experience creating digital solutions
             that combine functionality with beautiful design.
           </p>
         </div>
@@ -36,9 +36,10 @@ const AboutSection = () => {
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">My Journey</h3>
             <p className="text-muted-foreground">
-              Started as a curious student learning HTML and CSS, I've evolved into a full-stack 
-              developer with expertise in modern frameworks and technologies. I believe in the 
-              power of technology to solve real-world problems and create meaningful experiences.
+            As a passionate Web Developer, I bring over six years of expertise in crafting applications utilizing leading open-source technologies. 
+            My proficiency encompasses a robust skill set in PHP, Java, and Node.js, enabling me to deliver dynamic and scalable solutions. 
+            My experience extends to database management, where I adeptly handle relational databases, such as MySQL and PostgreSQL, and non-relational platforms like MongoDB.
+            I am committed to leveraging my technical acumen to drive innovation and efficiency in web development projects.
             </p>
             <p className="text-muted-foreground">
               When I'm not coding, you'll find me exploring new design trends, contributing to 
@@ -61,8 +62,13 @@ const AboutSection = () => {
           </div>
           
           <div className="relative">
-            <div className="w-full h-96 bg-gradient-to-br from-primary/20 to-purple-600/20 rounded-lg flex items-center justify-center">
-              <div className="text-6xl">👨‍💻</div>
+            <div className="w-full h-96 bg-gradient-to-br  rounded-lg flex items-center justify-center">
+            <img
+      src="fullstack.png"
+      alt="Fullstack Developer"
+      style={{ maxWidth: '100%', maxHeight: '24rem' }}
+      
+    />
             </div>
           </div>
         </div>

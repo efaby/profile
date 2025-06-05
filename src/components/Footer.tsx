@@ -9,24 +9,40 @@ const Footer = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const goToLinkedin = () => {
+    window.open('https://www.linkedin.com/in/fabian-villa-73175b28/', '_blank');
+  };
+  const goToGithub = () => {
+    window.open('https://github.com/efaby', '_blank');
+  };
+  const goToMail = () => {
+    window.location.href = 'mailto:efaby10@gmail.com';
+  };
+  const handleButtonClick = (action: () => void) => {
+    action();
+  };
+  const handleLinkedinClick = () => handleButtonClick(goToLinkedin);
+  const handleGithubClick = () => handleButtonClick(goToGithub);
+  const handleMailClick = () => handleButtonClick(goToMail);
+
   return (
     <footer className="bg-secondary/50 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Logo and Description */}
           <div>
-            <h3 className="text-2xl font-bold text-gradient mb-4">Alex Johnson</h3>
+            <h3 className="text-2xl font-bold text-gradient mb-4">Fabian Villa</h3>
             <p className="text-muted-foreground mb-4">
               Full Stack Developer passionate about creating amazing digital experiences.
             </p>
             <div className="flex space-x-4">
-              <Button variant="outline" size="icon" className="border-white/20 hover:bg-white/10">
+              <Button variant="outline" size="icon" className="border-white/20 hover:bg-white/10" onClick={handleGithubClick}>
                 <Github className="h-4 w-4" />
               </Button>
-              <Button variant="outline" size="icon" className="border-white/20 hover:bg-white/10">
+              <Button variant="outline" size="icon" className="border-white/20 hover:bg-white/10"  onClick={handleLinkedinClick}>
                 <Linkedin className="h-4 w-4" />
               </Button>
-              <Button variant="outline" size="icon" className="border-white/20 hover:bg-white/10">
+              <Button variant="outline" size="icon" className="border-white/20 hover:bg-white/10" onClick={handleMailClick}>
                 <Mail className="h-4 w-4" />
               </Button>
             </div>
@@ -49,8 +65,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-muted-foreground">
               <li>Web Development</li>
-              <li>UI/UX Design</li>
-              <li>Mobile Development</li>
+              <li>API Design</li>
               <li>Consulting</li>
               <li>Code Review</li>
             </ul>
@@ -61,9 +76,7 @@ const Footer = () => {
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-1 text-muted-foreground">
-              <span>© {currentYear} Alex Johnson. Made with</span>
-              <Heart className="h-4 w-4 text-red-500" />
-              <span>using React & Tailwind CSS</span>
+              <span>© {currentYear} Fabian Villa.</span>
             </div>
             <Button 
               variant="ghost" 
